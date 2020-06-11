@@ -1,0 +1,537 @@
+/* -------------------tạo style chữ*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* -------------------tạo bố cục - important*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: lightgray;
+  position: relative;
+  padding-bottom: 200px;
+  min-height: 100vh;
+}
+#top-bar {
+  background-color: #333;
+  color: #fff;
+}
+#sideBarsFooter {
+  background-color: #333;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+.nhap {
+  color: black;
+}
+
+/* -------------------css header, top-bar */
+#top-bar {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+  height: 25px;
+}
+#lienLac,
+#generalInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+#lienLac div,
+#generalInfo a {
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+#generalInfo a:hover {
+background-color: lightgray;
+color: black;
+font-weight: bold;
+cursor: pointer;
+}
+#generalInfo a:active {
+  background-color: darkgray;
+}
+#hotmail {
+  border-left: 1px solid whitesmoke;
+}
+
+#gioiThieu,
+#warranty,
+#shipment {
+  border-right: 1px solid whitesmoke;
+}
+
+/*làm 1 cái menu nhỏ trên thanh top-bar*/
+#generalInfo a:last-child {
+  width: 40px;
+}
+.submenu-drop {
+  background-color: darkgrey;
+  list-style-type: none;
+  display: none;
+  position: absolute;
+  float: right;
+  right: 0;
+  margin-top: 51px;
+  z-index: 2;
+  border-radius: 3px;
+}
+
+.submenu-drop > li {
+  padding: 10px 10px;
+  border-radius: 5px;
+  color: black;
+}
+
+.submenu-drop > li:hover {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.submenu-drop > li:active {
+  background-color: lightgray;
+  color: red;
+}
+/*cần js*/
+.active{
+  display: block;
+}
+/*------------------- bố cục contaier thẻ cha cho sidebars*/
+#sideBarsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 95vw;
+  margin: 0 auto;
+  padding: 15px 20px;
+}
+
+/*------------------- định dạng sticky sidebar ngang*/
+#upper-sticky {
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  justify-content: space-around;
+  background-color: lightgray;
+  z-index: 1;
+}
+div.productsCater {
+  padding-top: 10px;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+}
+
+div.productsCater:hover {
+  box-shadow: 10px 10px darkgrey;
+  border-radius: 20%;
+  cursor: pointer;
+}
+div.productsCater:active {
+  box-shadow: 5px 5px darkgrey;
+  border-radius: 20%;
+  cursor: pointer;
+}
+.productsCater img {
+  width: 70px;
+  height: 70px;
+  padding-bottom: 2px;
+  border-radius: 25%;
+
+}
+.captionProductCat {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+.fa-cart-plus{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 55px;
+  width: 75px;
+  height: 70px;
+  background-color: darkgray;
+  border-radius: 55px;
+}
+#TEAM3-logo img{
+  width: 80px;
+  height: 80px;
+}
+#TEAM3-logo-trangChu img {
+  width: 120px;
+  height: 120px;
+}
+/*------------------- định dạng seaching bar*/
+#search-topBar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  height: 30px;
+  margin-top: 5px;
+  background-color: lightgrey;
+}
+#s-box {
+  width: 65%;
+  height: 100%;
+}
+#khungSearch {
+  outline: none;
+  width: 100%;
+  border-radius: 5%;
+  height: 100%;
+  color: black;
+  background-color: lightgray;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 16px;
+  border: 1.5px solid grey;
+  padding-left: 15px;
+  caret-color: red;
+}
+#khungSearch::placeholder {
+  padding-left: 15px;
+}
+#khungSearch:hover {
+  box-shadow: 0 5px darkgrey;
+}
+#s-hotline {
+  width: 30%;
+  height: 100%;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-style: italic;
+}
+#phone-s-hotline {
+  color:green;
+  padding-right: 5px;
+}
+#s-symbol {
+  width: 5%;
+  display: flex;
+  text-align: center;
+}
+
+#s-symbol button {
+  background: none;
+  z-index: 0;
+}
+.fa-search {
+  font-size: 1.4em;
+}
+.fa-search:hover {
+  font-size: 2.5em;
+  cursor: pointer;
+}
+.fa-search:active {
+  color: red;
+  font-size: 2em;
+  cursor: pointer;
+}
+/*------------------- định dạng page location*/
+#page-location {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content: space-between;
+  flex: 1 0 auto;
+  margin-top: 55px;
+  font-size: 14px;
+  padding-bottom: 30px;
+}
+#page-location > div > a:hover {
+  color: red;
+  cursor: pointer;
+}
+#page-location > div > a:active {
+  color: darkred;
+}
+#page-location > div > a {
+  text-decoration: none;
+  color: black;
+}
+#page-location div:nth-last-child(1):hover {
+  color: black;
+  cursor: default;
+}
+/*------------------- định dạng phần nội dung, content-sideBars*/
+
+/*-------------------Content*/
+#content-sideBars {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+#introduction {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+#Info {
+  padding-right: 25px;
+  text-align: justify;
+  padding-bottom: 30px;
+}
+#Info h3,
+#Info p {
+  padding-top: 15px;
+}
+/*-------------------Content/ related-post*/
+#related-post {
+  margin-top: 40x;
+  margin-left: 30px;
+  margin-right: 50px;
+  border-radius: 20px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(197, 193, 193);
+}
+ul#post-menu li {
+  list-style-type: none;
+  padding-left: 30px;
+  padding-top: 25px;
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+ul#post-menu li ul.sub-post li {
+  font-size: 14px;
+  padding-left: 20px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-weight: 400;
+}
+.nhap:hover {
+  cursor: pointer;
+  color:darkblue;
+  font-weight: bold;
+}
+.nhap:active {
+  color: darkred;
+}
+#post-menu-title {
+  border-bottom: 2px solid rgb(94, 91, 91);
+  margin-top: -6px;
+  margin-bottom: 6px;
+  margin-right: 129px;
+}
+/*-------------------othersIntro*/
+#othersIntro {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 25%;
+}
+.IntroPost {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.IntroPost img {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+.IntroCaption {
+  display: block;
+  font-size: 12px;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  text-align: justify;
+}
+.IntroPost:hover {
+  color: red;
+  cursor: pointer;
+  font-weight: bolder;
+  box-shadow: 10px -10px darkgray;
+}
+.IntroPost:active {
+  color: darkred;
+  font-weight: bolder;
+  box-shadow: 5px -5px darkgray;
+}
+/*-------------------Định dạng Footer*/
+#sideBarsFooter {
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  font-size: 11px;
+}
+/*-------------------Định dạng Footer / cột đầu*/
+#contacts {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#phone-contact {
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 5px;
+  text-align: left;
+  
+}
+#phone-p2 {
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 20px;
+}
+#about {
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+ul#about-menu li{
+  padding-left: 10px;
+  list-style-type: none;
+}
+
+ul#about-menu li ul#about-sub li{
+  list-style-type: ">";
+  margin-left: 10px;
+  padding-top: 4px;
+  padding-bottom: 1px;
+}
+ul#about-menu li ul#about-sub li:nth-child(1):hover,
+ul#about-menu li ul#about-sub li:nth-child(2):hover,
+ul#about-menu li ul#about-sub li:nth-child(3):hover,
+ul#about-menu li ul#about-sub li:nth-child(4):hover {
+  color: lightgreen;
+  cursor: pointer;
+}
+ul#about-menu li ul#about-sub li:nth-child(1):active,
+ul#about-menu li ul#about-sub li:nth-child(2):active,
+ul#about-menu li ul#about-sub li:nth-child(3):active,
+ul#about-menu li ul#about-sub li:nth-child(4):active {
+  color: yellow;
+}
+/*-------------------Định dạng Footer / cột hai*/
+#sideBars-adress {
+
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#address-info {
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding-left: 40px;
+  width: 60%;
+
+}
+#address-info p {
+  padding: 7px;
+}
+#address-logo {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#address-logo img {
+  width: 230px;
+  height: auto;
+  padding-right: 10px;
+}
+/*-------------------Định dạng Footer / cột ba*/
+#map {
+  width: 30%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#map iframe {
+  width: 95%;
+  height: 180px;
+  border-radius: 5px;
+}
+
+/*------------------------------------------------------------------------*/
+/*-------------hoàn thiện-------------*/
+
+/*-----filter menu--------*/
+#filter-sticky {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+#filter-sticky img {
+  width: 50%;
+  align-self: center;
+  padding-bottom: 5px;
+}
+#filter-title {
+  background-color: darkgray;
+  color: black;
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  border: 2px solid darkblue;
+}
+#filter-title:hover, .titleName:hover {
+  background-color: lightgray;
+}
+#filter-title:active,.titleName:active {
+  background-color: lightblue;
+}
+#filter-cat {
+  align-self: center;
+  width: 70%;
+}
+.titleName {
+  text-align: center;
+  background-color:rgb(133, 131, 131);
+  padding-top: 2px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 2px solid darkblue;
+}
+
+
+.filter-submenu {
+  background-color: rgb(180, 171, 171);
+  padding-left: 5px;
+}
+
+#filter-brand, #filter-price, #filter-color {
+ font-weight: bold;
+ padding-bottom: 5px;
+ padding-top: 5px;
+}

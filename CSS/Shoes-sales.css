@@ -1,0 +1,519 @@
+/* v span down tree */
+    /* xóa định dạng cũ của bullets */
+ul, #stickyUL {
+    list-style-type: none;
+}
+
+    /* xóa lề so với ul ban đầu */
+#stickyUL {
+    margin: 0;
+    padding: 0;
+}
+
+    /* định dạng trỏ chuột khi đưa vào bullets thành pointer */
+#stickyDrop {
+    cursor: pointer;
+    user-select: none;
+}
+
+/* ẩn tab bullets*/
+.stickyElement {
+    display: none;
+}
+
+    /* hiển thị bullets con khi KH ấn vào mũi tên, dùng js*/
+.active {
+    display: block;
+}
+/* ^ span down tree */
+
+/* v Định dạng upper sticky bar*/
+
+#upper-sticky-bar {
+    background-color: lightcyan; /* <-- chỉnh màu tạm thời để thấy điều chỉnh*/
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    font-size: 75%;
+    margin: 0;
+    padding-left: 0;
+    border-collapse: collapse;
+    height: 25px;
+}
+  
+#sticky-1 {
+    display: flex;
+    position: relative;
+    font-size: 1.4vw;
+    padding-left: 0;
+    padding-right: 0;
+    border-right: 1px solid black;
+    height: 100%;
+    width: 15%;
+    background-color: lightcoral;
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+}
+#sticky-2{
+    display: flex;
+    position: relative;
+    font-size: 1.3vw;
+    border-right: 1px solid black;
+    height: 100%;
+    width: 10%;
+    background-color: lightcoral;
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+}
+#sticky-3,#sticky-4,#sticky-5 {
+    display: flex;
+    position: relative;
+    font-size: 1.3vw;
+    padding-left: 0;
+    padding-right: 0;
+    border-right: 1px solid black;
+    height: 100%;
+    width: 25%;
+    background-color: lightcoral;
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+#view-tree-upper-sticky-bar {
+    display: flex;
+    position: absolute;
+    margin-right: 10%;
+    margin-left: 62vw;
+    margin-top: 1px;
+    background-color: lightcoral;
+    z-index: 1;
+    opacity: 1;
+}
+
+.stickyElement {
+    font-size: 1.3vw;
+    margin: 0;
+    padding-right: 2vw;
+}
+/* CSS cho nút menu + nút xem thêm, quay lại */
+
+#btn-drop:hover {background-color: greenyellow}
+#btn-drop:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#btn-drop{
+    display: flex;
+    position: relative;
+    font-size: 1.3vw;
+    border-bottom: 1px solid black;
+    height: 100%;
+    width: 10%;
+    background-color: orangered;
+    margin-top: 0;
+    align-items: center;
+}
+#more{
+    display: flex;
+    position: relative;
+    font-size: 0.7vw;
+    background-color: black;
+    color: white;
+    margin-left: 76%;
+    width: 18%;
+    height: 2%;
+    padding: 2%;
+    align-items: center;
+}
+
+/* ^ Định dạng upper sticky bar */
+ 
+ 
+  /* css logo + các hình tiếp theo */
+  .logo_icon{
+      display: flex;
+      position: relative;
+      font-size: 75%;
+      margin: 0;
+      padding-left: 0;
+      border-collapse: collapse;
+      height: 60px;
+      margin-left: 20%;
+      margin-top: 2%;
+    }
+    .logo{
+        display: flex;
+        position: relative;
+        font-size: 1.4vw;
+        height: 100%;
+        width: 15%;
+        margin-left: 20%    ;
+        border-radius: 90%;
+        width: 5em;
+        height: 5em;
+    }
+  .a1{
+    display: flex;
+    position: relative;
+    font-size: 1.2vw;
+    left: 50%;
+    width: 10%;
+    width: 5em;
+  }
+  .a2{
+    display: flex;
+    position: relative;
+    left: 80%;
+    font-size: 1.2vw;
+    width: 10%;
+    width: 5em;
+  }
+  .a3{
+    display: flex;
+    position: relative;
+    left: 100%;
+    font-size: 1.2vw;
+    width: 10%;
+    width: 5em;
+  }
+  .a4{
+    display: flex;
+    position: relative;
+    left: 130%;
+    font-size: 1.2vw;
+    width: 9%;
+    width: 5em;
+  }
+  .a5{
+    display: flex;
+    position: relative;
+    left: 170%;
+    font-size: 1.2vw;
+    width: 9%;
+    width: 5em;
+  }
+  .a6{
+    display: flex;
+    position: relative;
+    left: 190%;
+    font-size: 1.2vw;
+    width: 10%;
+    width: 5em;
+  }
+  .b{
+      text-decoration: none;
+  }
+  .text_of_icon,a {
+      text-decoration: none;
+    flex-direction: column;
+    position: relative;
+    margin-top: 1.5%;
+  }
+  .giaynu{
+    flex-direction: column;
+    position: relative;
+    margin-left: 31%;
+    font-size: 1vw;
+    top: 1.5em;
+}   
+  .giaynam{
+  flex-direction: column;
+    position: relative;
+    margin-left: 2.8%;
+    font-size: 1vw;
+    top: 1.5em
+  }
+  .aokhoac{
+    flex-direction: column;
+    position: relative;
+    margin-left: 2.7%;
+    font-size: 1vw;
+    top:1.5em;
+  }
+.tui{
+    flex-direction: column;
+    position: relative;
+    margin-left: 2.4%;
+    font-size: 1vw;
+    top:1.5em;
+}
+.dogym{
+    flex-direction: column;
+    position: relative;
+    margin-left: 2%;
+    font-size: 1vw;
+    top:1.5em;
+}
+.phukien{
+    flex-direction: column;
+    position: relative;
+    margin-left: 1%;
+    font-size: 1vw;
+    top:1.5em;
+} */
+     /* css thanh search */
+   #searching{
+         flex-direction: row;
+         position: relative;
+     }
+  .search{
+    font-size: 1vw;
+    flex-direction: row;
+    position: relative;
+      width: 25%;
+      height: 31%;
+      border: 1px solid #706B6B;
+      margin-top: 4%;
+      margin-left: 35%;
+      margin-bottom: 1%;
+  }
+  .icon_search{
+    font-size: 1vw;
+    flex-direction: row;
+    position: relative;
+     width: 1.4%;
+     right: 1.6%;
+     top: 0.4em;
+  }
+   .icon_call{
+    font-size: 1vw;
+    flex-direction: row;
+    position: relative;
+    width: 2%;
+    right: 15%;
+    top: 0.7em;
+  }
+  .d{
+    font-size: 1vw;
+    flex-direction: row;
+    position: relative;
+      text-decoration: none;
+      color: red;   
+      font-weight: bold; 
+      right: -2%;   
+  } 
+
+   /* css slideshow */
+   #imgSlider{
+    font-size: 1vw;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    margin-top: 0.4%;
+   }
+
+  /* v Định dạng sidebar */
+  #sidebar,
+#brand,
+#color,
+#price {
+  display: flex;
+  flex-direction: column;
+  background-color: salmon;
+}
+#sidebar {
+  float: right;
+  position: sticky;
+  margin-right: 144%;
+  width: 300%;
+  top: 0vh;
+}
+.submitFilter {
+  width: 26%;
+  align-self: center;
+  margin-top: 1px;
+  margin-bottom: 0;
+  background-color: springgreen;
+}
+.filterName {
+  text-align: center;
+  font-size: 1.4vw;
+  font-weight: bold;
+  border: 1px solid white;
+  background-color: lightgreen;
+}
+#itemsFilter {
+  font-size: 1.5vw;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 2px;
+  background-color: lightseagreen;
+}
+
+  /* v Định dạng body, main và footer */
+  #container {
+      display: flex;
+      height: 100vh;
+      width: 80vw;
+      margin-left: 20%;
+      height: 100%;
+  }
+  #main {
+      flex: 1 0 auto;
+  }
+  #footer {
+      flex-shrink: 0;
+      bottom: 0;
+      width: 100%;
+      height: 15vh;
+      background: lime;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      
+  }
+  
+  #information{
+      padding-right: 5vw;
+  }
+
+  #location {
+      padding-left: 5vw;
+  }
+
+
+  /* CSS thanh menu */
+   li:hover{
+     background-color:#1F1D1D;
+  }
+ #stickyUL,  #stickyDrop, .stickyElement, li , .menu_nho {
+     background-color: #443F3F;
+      text-decoration: none;
+      color: white;
+      margin: 0;
+  }
+
+  /* CSS dòng trang chủ */
+  .Homepage{
+      position: relative;
+    left: 20%;
+    padding-top: 40px;
+  }
+
+
+  body {
+    background: #fff;
+    color: 333;
+ }  
+
+
+ /* CSS giày  + hiệu ứng ảnh*/ 
+ .img_phu_kien{
+     width: 130px;
+     padding-right: 2.5%; 
+     transition: all 1s;
+       
+ }
+    .img_phu_kien:hover{
+        transform: scale(1.3);
+        transition: all ease-in-out 0.5s;
+    }
+
+
+    /* CC tên giày */
+#name{
+  display: flex;
+  position: relative;
+  border-collapse: collapse;
+}
+    .name_shoe{
+        flex-direction: row;
+        position: relative;
+        font-weight: bold;
+        font-size: 50%;
+        font-size: 0.70vw;
+        justify-content: space-between;
+        padding: 2.12em;
+    
+    }
+
+    #news{
+      flex-direction: row;
+      height: 100vh;
+      width: 40vw;
+      margin-left: 20%;
+      height: 100%;   
+    }
+    .img-1{
+      display: flex;
+      position: relative;
+    }
+    #news-1
+    {
+      padding: 20px;
+      border: 1px solid grey;
+      border-right-width: 5px black 50px ;
+    }
+    .news-1{
+      width: 100%;
+      opacity: 60%;
+    }
+    #news-2
+    {
+      margin-top: 6%;
+      padding: 20px;
+      border: 1px solid grey;
+    }
+    .news-2{
+      width: 100%;
+      opacity: 60%;
+    }
+    #news-3
+    {
+      padding: 20px;
+      border: 1px solid grey;
+      border-right-width: 5px black 50px ;
+    }
+    .news-3{
+      width: 100%;
+      opacity: 60%;
+    }
+    #news-4
+    {
+      margin-top: 6%;
+      padding: 20px;
+      border: 1px solid grey;
+    }
+    .news-4{
+      width: 100%;
+      opacity: 60%;
+    }
+      .column{
+      padding-right: 5%;
+      border-right: 3px solid black;
+    }
+ 
+    #SHOE_WOMEN {
+      padding-right: 30%;
+    }
+
+    /*CSS nội dung hình và chữ giày nữ*/
+    div.items-womenshoes {
+      vertical-align: top;
+      display: inline-block;
+      text-align: center;
+      width: 120px;
+    }
+    #SHOE_WOMEN {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .captionWomenShoes {
+      display: block;
+      font-size: 1vw;
+      font-weight: bold;
+    }
+    #SHOE_WOMEN img {
+      width: 100%;
+      height: 100px;
+      padding-bottom: 15px
+    }
+    #Trangchu-WomenShoes {
+      padding-left: 20%;
+    }

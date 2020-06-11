@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEAM3- GIỚI THIỆU</title>
+    <script src="https://kit.fontawesome.com/6b7baca8eb.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../CSS/index.css">
+</head>
+
+<body>
+    <div id="top-bar">
+        <div id="lienLac">
+            <div id="hotline">
+                <p>1900989898</p>
+            </div>
+            <div id="hotmail">
+                <p>TEAM3@gmail.com</p>
+            </div>
+        </div>
+        <div id="generalInfo">
+            <a href="#" class="top-right" id="gioiThieu">
+                <p>GIỚI THIỆU</p>
+            </a>
+            <a href="#" class="top-right" id="warranty">
+                <p>CHÍNH SÁCH BẢO HÀNH</p>
+            </a>
+            <a href="#" class="top-right" id="shipment">
+                <p>GIAO HÀNG TOÀN QUỐC</p>
+            </a>
+            <a href="../HTML/FormGopY.html" class="top-right" id="complaint">
+                <p>THAN PHIỀN, GÓP Ý</p>
+            </a>
+            <a id="dropBar" onclick="dropMenuDown()">
+                <i class="fa fa-ellipsis-v"></i> </a>
+            <ul class="submenu-drop">
+                <li id="doSize">CÁCH ĐO SIZE</li>
+                <li id="baoMat">CHÍNH SÁCH BẢO MẬT THÔNG TIN</li>
+            </ul>
+
+        </div>
+    </div>
+    <div id="sideBarsContainer">
+        <div id="upper-sticky">
+            <div class="productsCater" id="TEAM3-logo">
+                <a href="../HTML/index.html">
+                    <img src="../HTML/img/GIOI THIEU/img/TEAM3-logo-transparent2.png" />
+                    <span class="captionProductCat">TRANG CHỦ</span></a>
+            </div>
+            <div class="productsCater" id="Women">
+                <img src="../HTML/img/giaynu.jpg" />
+                <span class="captionProductCat">GIÀY NỮ</span>
+            </div>
+            <div class="productsCater" id="Men">
+                <img src="../HTML/img/giaynam.jpg" />
+                <span class="captionProductCat">GIÀY NAM</span>
+            </div>
+            <div class="productsCater" id="Jacket">
+                <img src="../HTML/img/aokhoac.jpg" />
+                <span class="captionProductCat">ÁO KHOÁC</span>
+            </div>
+            <div class="productsCater" id="Backpack">
+                <img src="../HTML/img/balo.jpg" />
+                <span class="captionProductCat">BA LO</span>
+            </div>
+            <div class="productsCater" id="GymShirts">
+                <img src="../HTML/img/yoga.jpg" />
+                <span class="captionProductCat">ĐỒ GYM - YOGA</span>
+            </div>
+            <div class="productsCater" id="Accessories">
+                <img src="../HTML/img/phukien.jpg" />
+                <span class="captionProductCat">PHỤ KIỆN</span>
+            </div>
+            <div class="productsCater" id="purchase">
+                <i class="fa fa-cart-plus fa-fw"></i>
+                <span class="captionProductCat">GIỎ HÀNG</span>
+            </div>
+        </div>
+        <div id="search-topBar">
+            <div id="s-box">
+                <input id="khungSearch" type="text" placeholder="Bạn muốn tìm gì..." />
+            </div>
+            <div id="s-symbol">
+                <i class="fas fa-search fa-fw"></i>
+            </div>
+            <div id="s-hotline">
+                <i id="phone-s-hotline" class="fa fa-phone"></i>
+                <p>Đặt hàng nhanh:1900989898</p>
+            </div>
+
+        </div>
+        <div id="page-location">
+            <div id="location-homepage"><a href="../HTML/index.html"> Trang chủ </a><b>/</b></div>
+            <div id="location-baiViet"><a href=""> Bài viết</a> <b>/</b></div>
+            <div id="location-name"></div>
+        </div>
+        <div id="content-sideBars">
+            <div id="othersIntro">
+                <div id="filter-sticky">
+                    <img src="../HTML/img/GIOI THIEU/img/TEAM3-logo-transparent2.png" alt="">
+                    <p id="filter-title"><b> <i class="fas fa-angle-double-down"></i> LỌC SẢN PHẨM <i
+                                class="fas fa-angle-double-down"></i></b></p>
+                    <div id="filter-cat">
+                        <p class="titleName" id="filter-brandTitle"><i class="fas fa-angle-double-down"></i> THƯƠNG HIỆU
+                            <i class="fas fa-angle-double-down"></i></p>
+                        <div class="filter-submenu" id="filter-brand">
+                            <div>
+                                <input type="checkbox" id="NIKE" />
+                                <label>NIKE</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="ADIDAS" />
+                                <label>ADIDAS</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="NEW-BALANCE" />
+                                <label>NEW BALANCE</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="ASICS" />
+                                <label>ASICS</label>
+                            </div>
+                        </div>
+                        <p class="titleName" id="filter-colorTitle" onclick="dropItDown()"><i
+                                class="fas fa-angle-double-down"></i> MÀU SẮC <i class="fas fa-angle-double-down"></i>
+                        </p>
+                        <div class="filter-submenu" id="filter-color">
+                            <div>
+                                <input type="checkbox" id="white" />
+                                <label>TRẮNG</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="white-black" />
+                                <label>TRẮNG-ĐEN</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="pink" />
+                                <label>HỒNG</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="pink-white" />
+                                <label>TRẮNG-HỒNG</label>
+                            </div>
+                        </div>
+                        <p class="titleName" id="filter-priceTitle"><i class="fas fa-angle-double-down"></i> GIÁ <i
+                                class="fas fa-angle-double-down"></i></p>
+                        <div class="filter-submenu" id="filter-price">
+                            <div>
+                                <input type="checkbox" id="cheap" />
+                                <label>100-500k</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="affordable" />
+                                <label>500-1 triệu</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="high" />
+                                <label>1-2 triệu</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="expensive" />
+                                <label>> 2 triệu</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sideBarsFooter">
+        <div id="contacts">
+            <div id="phone-contact">
+                <p>Đặt hàng và thu tiền tận nơi toàn quốc</p>
+                <p id="phone-p2">----1900989898----</p>
+            </div>
+            <div id="about">
+                <ul id="about-menu">
+                    <li>Thông tin
+                        <ul id="about-sub">
+                            <li id="gioiThieu-bottom"> Giới thiệu về TEAM3</li>
+                            <li class="nhap-bottom"> Tuyển dụng</li>
+                            <li class="nhap-bottom">Quy chế hoạt động</li>
+                            <li class="nhap-bottom">Chính sách và quy định</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="sideBars-adress">
+            <div id="address-info">
+                <p>Q.Tân Phú: 999 Trương Vĩnh Kí , P.Tân Thành</p>
+                <p>Q.Tân Phú: 888 Trương Vĩnh Kí , P.Tân Thành</p>
+                <p>Q.Tân Phú: 1000 Trương Vĩnh Kí , P.Tân Thành</p>
+                <p>Q.Tân Phú: 2000 Trương Vĩnh Kí , P.Tân Thành</p>
+                <p>Q.Tân Phú: 3000 Trương Vĩnh Kí , P.Tân Thành</p>
+                <p>Q.Tân Phú: 4000 Trương Vĩnh Kí , P.Tân Thành</p>
+            </div>
+            <div id="address-logo">
+                <img src="../HTML/img/GIOI THIEU/img/TEAM3-logo-transparent2.png" alt="">
+            </div>
+        </div>
+        <div id="map"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62708.145867711006!2d106.5923843989117!3d10.791455531571192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bf733e69175%3A0xd8d63453733325fe!2zVMOibiBQaMO6LCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1591467566900!5m2!1svi!2s"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe></div>
+    </div>
+</body>
+<script src="../JS/sideBars.js"></script>
+
+</html>

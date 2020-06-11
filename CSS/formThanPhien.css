@@ -1,0 +1,152 @@
+/* -------------------tạo style chữ*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/*--------------------tạo form page-----------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(255, 211, 218);
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 400px;
+}
+#complaint-apologize {
+  position: absolute;
+  bottom: 100px;
+  height: 300px;
+  background-color: rgb(255, 149, 162);
+}
+#complaint-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(187, 98, 98);
+}
+
+/*--------------------định dạng hình động-----------*/
+/*-------------------- div cha complaintbox----------*/
+#complaint-box {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 200px;
+}
+/*------------Hình sticky------------*/
+#complaint-sticky {
+  top: 60px;
+  position: fixed;
+  left: 0;
+  width: 180px;
+  display: inline-block;
+  text-align: center;
+}
+#complaint-sticky:hover {
+  box-shadow: 10px 10px lightgrey;
+  border-radius: 100%;
+}
+#complaint-sticky:active {
+  box-shadow: 5px 5px darkgray;
+  border-radius: 100%;
+}
+#complaint-sticky img {
+width: 180px;
+}
+#caption-homepage {
+  display: block;
+  color:darkblue;
+  font-weight: bold;
+}
+/*-------------------- top pic----------*/
+#complaint-pic img {
+  width: 100%;
+  height: 250px;
+  border-radius: 9px;
+  border: 0.5 solid grey;
+}
+/*-------------------- chuỗi các thẻ nhập liệu----------*/
+.complaint-form {
+  background-color: rgb(252, 236, 238);
+  border: 2px solid lightgray;
+  margin-top: 20px;
+  padding: 20px 20px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgb(129, 93, 97);
+}
+.complaint-form .question, #complaint-intro {
+  text-align: justify;
+}
+#complaint-intro p:nth-last-child(1),
+.question b:nth-child(2),
+#complaint-name .question b,
+#complaint-phone .question b {
+  color: red;
+}
+.complaint-form input {
+  width: 100%;
+  height: 25px;
+  border-radius: 9px;
+}
+.complaint-form input::placeholder {
+  padding-left: 7px;
+}
+input {
+  outline: none;
+  caret-color: red;
+  padding: 0 5px;
+}
+#complaint-phone {
+  margin-bottom: 20px;
+}
+#complaint-apologize {
+  border: 2px solid lightgray;
+  margin-top: 20px;
+  padding: 20px 20px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgb(129, 93, 97);
+  margin-left: 200px;
+  margin-right: 200px;
+}
+#complaint-apologize img {
+    display: flex;
+    margin: 10px auto;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    height: auto;
+    width: 280px;
+  }
+#complaint-apologize .question b:nth-child(2) {
+  color: black;
+}
+
+
+/*-------------------- chỉnh footer----------*/
+#complaint-footer {
+  display: flex;
+  justify-content: center;
+}
+#complaint-footer input {
+    margin-top: 20px;
+    height: 50px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 15px;
+    margin-left: 30px;
+    width: 320px;
+}
+
+#complaint-footer input:hover {
+  background-color: lightgreen;
+  cursor: pointer;
+}
+#complaint-footer input:active {
+  background-color: darkgreen;
+  color: white;
+}

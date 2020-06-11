@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body id="bodyform">
+    <form action="/sign_in/index.html" method="GET">
+        <fieldset>
+            <legend>
+                <h3>Thông tin cá nhân</h3>
+            </legend>
+            <table class="table">
+                <tr>
+                    <td>Họ tên:</td>
+                    <td><input type="text" name="HoTen"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="Email"></td>
+                </tr>
+                <tr>
+                    <td>SĐT:</td>
+                    <td><input type="text" name="SDT"></td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ:</td>
+                    <td>
+                        <input type="text" name="DC_SoNha" placeholder="Số nhà">
+                        <input type="text" name="DC_PhuongXa" placeholder="Phường/Xã"><br>
+                        <input type="text" name="DC_QuanHuyen" placeholder="Quận/Huyện">
+                        <input type="text" name="DC_TinhThanh" placeholder="Tinh/Thành phố">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nghề nghiệp:</td>
+                    <td>
+                        <select name="NgheNghiep">
+                            <option value="HSSV">Học sinh - Sinh viên</option>
+                            <option value="NVVP">Nhân viên văn phòng</option>
+                            <option value="CN">Công nhân</option>
+                            <option value="Khac">Khác</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ngày sinh:</td>
+                    <td><input type="date" name="NgaySinh"></td>
+                </tr>
+                <tr>
+                    <td>Giới tính:</td>
+                    <td>
+                        <input type="radio" name="gioiTinh" checked> Nam
+                        <input type="radio" name="gioiTinh"> Nữ
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h3>Thông tin tài khoản</h3>
+            </legend>
+            <table>
+                <tr>
+                    <td>Tên tài khoản:</td>
+                    <td><input type="text" name="TenTK" required></td>
+                </tr>
+                <tr>
+                    <td>Mật khẩu:</td>
+                    <td><input id="mk" type="password" name="MK" required size="16"></td>
+                </tr>
+                <tr>
+                    <td>Xác nhận mật khẩu:</td>
+                    <td><input id="xnmk" type="password" required size="16 "></td>
+                </tr>
+            </table>
+        </fieldset>
+        <div class="div">
+            <input class="btn" id="submit" type="submit" value="Đăng Kí">
+            <button class="btn" type="reset">Hủy bỏ</button>
+        </div>
+    </form>
+</body>
+<script src="/JS/js.js"></script>
+
+</html>
+</body>
+
+</html>
